@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
-
+import Cripto from "./componentes/cripto"
+import "./App.css"
 function App() {
 
   const API_URL = import.meta.env.VITE_API_URL
@@ -20,15 +21,15 @@ function App() {
   if(!criptos) return <span>Cargando...</span>
 
   return(
-   <>
+   <div className="main-container">
     <h1>Lista de criptomonedas</h1>
-    <ol>
+    <div className="cripto-container">
       {criptos.map(({id, name, priceUsd}) => (
-        <li key={id}>Nombre: {name} Precio: {priceUsd}</li>
+        <Cripto key={id} name={name} priceUsd={priceUsd}/>
       ))}
-    </ol>
+    </div>
 
-   </>
+   </div>
   )
 }
 
