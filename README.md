@@ -1,8 +1,25 @@
-# React + Vite
+# CryptoDataWeb
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
+Una página web simple que muestra datos de algunas CriptoMonedas. Usa una API simple y es un pryecto perfecto para empezar con el aprendizaje en React. 
 
-Currently, two official plugins are available:
+## Características
+- Muestra el nombre de las CriptoMonedas.
+- Proporciona información clave sobre cada una.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías Utilizadas
+- HTML
+- CSS
+- JavaScript
+
+## Cómo Usar
+1. Clona este repositorio: -----
+2. En la terminal ejecuta el comando "yarn dev" y vas a poder ver el proyecto en el puerto que te indique.
+
+## Contribuciones
+¡Contribuciones son bienvenidas! Si encuentras algún error o tienes mejoras, por favor abre un issue o envía un pull request.
+
+## Capturas de Pantalla
+https://drive.google.com/file/d/1-NX5vIdfP1PmZPArNN5Y8KLA4TB9xy9C/view?usp=sharing
+
+
