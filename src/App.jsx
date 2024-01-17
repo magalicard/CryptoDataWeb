@@ -24,8 +24,15 @@ function App() {
    <div className="main-container">
     <h1>Lista de criptomonedas</h1>
     <div className="cripto-container">
-      {criptos.map(({id, name, priceUsd}) => (
-        <Cripto key={id} name={name} priceUsd={priceUsd}/>
+      {criptos.map(({id, name, priceUsd, symbol, changePercent24Hr}) => (
+        <Cripto 
+        key={id}
+        name={name}
+        priceUsd={priceUsd}
+        symbol={symbol} 
+        changePercent24Hr={changePercent24Hr}
+        />
+        
       ))}
     </div>
 

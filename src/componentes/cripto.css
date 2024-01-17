@@ -12,3 +12,11 @@
 .label {
     color: skyblue;
 }
+
+.positivo {
+    color: greenyellow;
+}
+
+.negativo {
+    color: red;
+}
