@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 html {
   box-sizing: border-box;
@@ -29,12 +30,18 @@ img {
 
 body {
   background: rgb(0,15,22);
-  background: linear-gradient(180deg, #171837 0%, #181F38 60.42%, #182438 100%);
+  background: linear-gradient(180deg, #03131a 0%, #029595 60.42%, #1c3e44 100%);
   min-height: 98vh;
 }
 
 h1 {
   margin-bottom: 2rem;
+  text-align: center;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 3.5rem; /* Aumenta el tamaño de la fuente */
+  color: #fff; /* Cambia el color a dorado */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade una sombra para darle profundidad */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
 }
 
 h2 {

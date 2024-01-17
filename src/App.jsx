@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import Cripto from "./componentes/cripto"
 import "./App.css"
+import logosimple from "../public/logosimple.png"
 function App() {
 
   const API_URL = import.meta.env.VITE_API_URL
@@ -22,6 +23,9 @@ function App() {
 
   return(
    <div className="main-container">
+    <div className="logo">
+        <img src={logosimple} alt="Logo de la pagina" />
+    </div>
     <h1>Lista de criptomonedas</h1>
     <div className="cripto-container">
       {criptos.map(({id, name, priceUsd, symbol, changePercent24Hr}) => (
