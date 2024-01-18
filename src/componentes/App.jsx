@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
-import Cripto from "./componentes/cripto"
+import Cripto from "./cripto"
 import "./App.css"
-import logosimple from "../public/logosimple.png"
+import logosimple from "/Users/Magali/proyecto-del-curso/public/logosimple.png"
+
+
+
 function App() {
 
   const API_URL = import.meta.env.VITE_API_URL
