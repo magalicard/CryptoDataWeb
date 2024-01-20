@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
-import Cripto from "./cripto"
 import "./Cuadricula.css"
 import logosimple from "/Users/Magali/proyecto-del-curso/public/logosimple.png"
+import Cripto from "./cripto/Cripto"
 
 
 
@@ -38,6 +38,7 @@ function Cuadricula() {
         priceUsd={priceUsd}
         symbol={symbol} 
         changePercent24Hr={changePercent24Hr}
+        id={id}
         />
         
       ))}
