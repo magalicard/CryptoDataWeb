@@ -31,7 +31,7 @@ function Cuadricula() {
     </div>
     <h1>Lista de criptomonedas</h1>
     <div className="cripto-container">
-      {criptos.map(({id, name, priceUsd, symbol, changePercent24Hr}) => (
+      {criptos.map(({id, name, priceUsd, symbol, changePercent24Hr, rank}) => (
         <Cripto 
         key={id}
         name={name}
@@ -39,6 +39,7 @@ function Cuadricula() {
         symbol={symbol} 
         changePercent24Hr={changePercent24Hr}
         id={id}
+        rank={rank}
         />
         
       ))}

@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             </Route>
             <Route path='/criptomonedas' element={<App/>}>
                 <Route index element={<Cuadricula/>}/>
-                <Route path=':id' element={<CriptoPage/>} />
+                <Route path=':id/' element={<CriptoPage/>} />
             </Route>
             <Route path='*' element={<Pagina404/>}/>
         </Routes>
