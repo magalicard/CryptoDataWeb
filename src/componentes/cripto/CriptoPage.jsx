@@ -8,10 +8,19 @@ const CriptoPage = () => {
     const params = useParams() //Este hook nos devuelve los parametros q existen en la URL
     //en este caso le indique como parametro id
     const [cripto, setCripto] = useState({})
+    const [history, setHistory] = useState([])
+
     useEffect(() => {
         axios.get(`${API_URL}/${params.id}`)
         .then(data =>
             setCripto(data.data.data) )
+        .catch( e => console.error(e))
+    }, [])
+
+    useEffect(() => {
+        axios.get(`${API_URL}/${params.id}/history?interval=d1`)
+        .then(data =>
+            setHistory(data.data.data) )
         .catch( e => console.error(e))
     }, [])
 
@@ -25,6 +34,26 @@ const CriptoPage = () => {
         </ul>
 
        </div>
+       <h2>HISTORIAL: </h2>
+       <table>
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            {
+                history.map(({date, priceUsd, time}) => (
+                    <tr key={time}>
+                         <td>{date}</td> {/* date.js para darle forma */}
+                        <td>{priceUsd}</td>
+                    </tr>
+                ))
+            }
+        </tbody>
+       </table>
+
         </>
     )
 }
