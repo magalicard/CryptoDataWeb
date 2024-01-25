@@ -5,6 +5,12 @@
     padding: 1rem;
 }
 
+.cripto:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.35);
+  }
+
 .info {
     color: rgb(191, 191, 191)
 }
@@ -20,3 +26,9 @@
 .negativo {
     color: red;
 }
+
+.cripto h2, .cripto a {
+    color: white;
+    text-decoration: none !important;
+}
+

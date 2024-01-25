@@ -1,28 +1,18 @@
-import { useEffect, useState } from "react"
-import axios from "axios"
+
 import "./Cuadricula.css"
 import logosimple from "/Users/Magali/proyecto-del-curso/public/logosimple.png"
 import Cripto from "./cripto/Cripto"
+import usePetition from "../hooks/usePetition"
 
 
 
 function Cuadricula() {
 
-  const API_URL = import.meta.env.VITE_API_URL
-  const [criptos, setCriptos] = useState()
+  const [criptos, cargandoCriptos, error] = usePetition('')
 
-  useEffect(() => {
-    axios.get(`${API_URL}`)
-      .then((data) => {
-        //console.log(data) //nos devuelve un objeto 
-        setCriptos(data.data.data);
-      })
-      .catch(() => {
-        console.error("Algo salió mal");
-      });
-  },[])
+  if (cargandoCriptos) return <span>Cargando...</span>
+  if (error) return <div>Error: {error.message}</div>;
 
-  if(!criptos) return <span>Cargando...</span>
 
   return(
    <div className="main-container">
@@ -31,7 +21,7 @@ function Cuadricula() {
     </div>
     <h1>Lista de criptomonedas</h1>
     <div className="cripto-container">
-      {criptos.map(({id, name, priceUsd, symbol, changePercent24Hr, rank}) => (
+      {criptos && criptos.map(({id, name, priceUsd, symbol, changePercent24Hr, rank}) => (
         <Cripto 
         key={id}
         name={name}

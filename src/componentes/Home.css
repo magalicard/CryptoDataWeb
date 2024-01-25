@@ -1,0 +1,44 @@
+.home-container {
+    text-align: center; 
+  }
+  
+  .home-container .title {
+    margin-bottom: .5rem;
+  }
+  
+  .home-container .subtitle {
+    margin-bottom: 2rem;
+    opacity: .5;
+  }
+  
+  .link {
+    text-decoration: none !important;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 20%;
+}
+
+.titulo {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 3.5rem; /* Aumenta el tamaño de la fuente */
+    color: #fff; /* Cambia el color a dorado */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade una sombra para darle profundidad */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+.titulo2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2.5rem; 
+}

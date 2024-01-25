@@ -3,7 +3,7 @@ import "./cripto.css"
 
 const Cripto = ({id, name, priceUsd, symbol, changePercent24Hr}) => {
    return (
-    <Link to={`/criptomonedas/${id}`}>Ver detalles
+    <Link to={`/criptomonedas/${id}`}>
         <div className="cripto">
             <h2>{name} </h2>
             <div className="info">
