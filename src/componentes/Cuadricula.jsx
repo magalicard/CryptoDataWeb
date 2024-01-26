@@ -1,6 +1,6 @@
 
 import "./Cuadricula.css"
-import logosimple from "/Users/Magali/proyecto-del-curso/public/logosimple.png"
+import logosimple from "../../public/logosimple.png"
 import Cripto from "./cripto/Cripto"
 import usePetition from "../hooks/usePetition"
 

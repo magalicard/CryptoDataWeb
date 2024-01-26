@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import "./Home.css"
-import logosimple from "/Users/Magali/proyecto-del-curso/public/logosimple.png"
+import logosimple from "../../public/logosimple.png"
 
 const Home = () => {
     return (
