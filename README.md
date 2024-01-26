@@ -19,7 +19,5 @@ Una página web simple que muestra datos de algunas CriptoMonedas. Usa una API s
 ## Contribuciones
 ¡Contribuciones son bienvenidas! Si encuentras algún error o tienes mejoras, por favor abre un issue o envía un pull request.
 
-## Capturas de Pantalla
-https://drive.google.com/file/d/1-NX5vIdfP1PmZPArNN5Y8KLA4TB9xy9C/view?usp=sharing
 
 
