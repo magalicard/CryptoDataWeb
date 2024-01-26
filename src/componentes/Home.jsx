@@ -12,9 +12,7 @@ const Home = () => {
             Bienvenido a Crytoufrency!
         </div>
         <div className="titulo2">Conoce las 100 criptos mas usadas</div>
-        <div className="link">
-        <Link to="/criptomonedas">Ver criptomonedas</Link>
-        </div>
+        <Link to="/criptomonedas" className="Link button">Ver criptomonedas</Link>
         </div>
     )
 }

@@ -1,0 +1,13 @@
+.ranking {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 30px;
+    margin: 2%;
+}
+
+.symbol {
+    margin: 2%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}

@@ -1,11 +1,11 @@
 import { parseFloatNumber } from "../../../helpers/numbers"
-
+import './CriptoInfo.css'
 const CriptoInfo = ({ cripto} ) => {
 
     return(
         <div className="info">
     <div className="main-info">
-        <span>Ranking: {cripto.rank}</span>
+        <span className="ranking">Ranking: {cripto.rank}</span>
         <h1>{cripto.name}</h1>
         <span className="symbol">{cripto.symbol}</span>
     </div>
