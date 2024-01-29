@@ -15,9 +15,10 @@ const Login = () => {
   const [ cargando, setCargando ] = useState(false)
   const [ error, setError ] = useState()
 
+
   const submit = (e) => {
     e.preventDefault()
-    setCargando(true)
+    setCargando(true) 
     setError(null)
     axios.post(`https://reqres.in/api/login`, user)
     .then(data => {
