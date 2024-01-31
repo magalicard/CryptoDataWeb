@@ -1,0 +1,15 @@
+.Avatar {
+  
+    /* Para centrar la imagen */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Para definir el tamaño de la imagen */
+    width: 200px;
+    height: 150px;
+
+    /* Para asegurarte de que la imagen cubra todo el espacio, incluso si no es cuadrada */
+    object-fit: cover;
+    margin-bottom: 10px;
+}

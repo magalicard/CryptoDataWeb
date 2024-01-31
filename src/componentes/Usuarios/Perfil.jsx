@@ -1,16 +1,24 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext} from "react"
 import { UserContext } from "../../context/UseContext";
-
+import './Perfil.css'
 const Perfil = () => {
 
-    const usuario = useContext(UserContext)
+    const user = useContext(UserContext)
+
+    if (!user) {
+        return <div>Cargando perfil...</div>;
+    }
 
     return(
         <div>
-            <h1>Perfil de {usuario.name}</h1>
-            <div>
-                <span>Usuario desde: {usuario.registered} </span>
+            <div className="Avatar">
+            <img src={user.avatar} />
             </div>
+            <h1>Perfil de {user.first_name} {user.last_name}</h1>
+            <div>
+                <span>Email: {user.email} </span>
+            </
+            div>
         </div>
     )
 }
