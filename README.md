@@ -16,6 +16,9 @@ Una página web simple que muestra datos de algunas CriptoMonedas. Usa una API s
 1. Clona este repositorio: -----
 2. En la terminal ejecuta el comando "yarn dev" y vas a poder ver el proyecto en el puerto que te indique.
 
+## Datos extra:
+Estoy usando la API Reqres. Los datos para iniciar sesion se encuentran en la seccion de singleUser de la web de Reqres
+
 ## Contribuciones
 ¡Contribuciones son bienvenidas! Si encuentras algún error o tienes mejoras, por favor abre un issue o envía un pull request.
 
